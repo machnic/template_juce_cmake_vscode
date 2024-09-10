@@ -62,9 +62,7 @@ Open Debug Menu in left Sidebar. And click Run button on the left in a menu of C
 (Note that you can also debug from "Debug" button in right-click menu of CMake Tools but you cannot use CodeLLDB debugger in this case.)
 
 
-#### (Optional) Setting JUCE version.
-
-The version of JUCE is v7.0.3 by default currently. Juce is located as a git submodule in `lib` directory, so you can switch the version by checking out in the directory like this.
+The version of JUCE is currently 8.0.1 by default. JUCE is located as a git submodule in `lib` directory, so you can switch the version by checking out in the directory like this.
 
 ```sh
 cd lib/JUCE
