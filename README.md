@@ -1,4 +1,4 @@
-# BoilerPlate Repository for developing audio plugins with JUCE & CMake & Visual Studio Code
+# Boilerplate Repository for developing audio plugins with JUCE & CMake & Visual Studio Code
 
 ## Requirements
 
@@ -10,7 +10,7 @@ Also, clangd a language server for C++ is highly recommended. In macOS, you can 
 
 Ninja is also recommended for fast build (will be used automatically if present in this repository. You can change priority of generators in `cmake.preferredGenerators` in workspace setting).
 
-### Recommended Extentions for vscode
+### Recommended extensions for vscode
 
 - [cpptools](https://github.com/microsoft/vscode-cpptools) (basic language supports for C++ development)
 - CMake (CMake language supports)
@@ -23,15 +23,15 @@ Ninja is also recommended for fast build (will be used automatically if present 
 ### macOS
 
 Install Xcode and type `xcode-select --install` in terminal.
-open `~/.zshrc` and add `export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"` in the last line of the file.
+Open `~/.zshrc` and add `export SDKROOT="$(xcrun --sdk macosx --show-sdk-path)"` in the last line of the file.
 
 ### Windows
 
 Install Visual Studio.
 
-### common
+### Common
 
-Clone this repository. 
+Clone this repository.
 
 ```sh
 git clone https://github.com/tomoyanonymous/juce_cmake_vscode_example --recursive
@@ -40,12 +40,11 @@ git clone https://github.com/tomoyanonymous/juce_cmake_vscode_example --recursiv
 Open `juce_cmake_vscode_example.code-workspace` with Visual Studio Code.
 If recommended extensions are not fully installed, notification to install them will come up.
 
-
 #### Build
 
-If CMake Tools is correctly installed, you will be asked which CMake Kits(compiler) you want to use. 
+If CMake Tools is correctly installed, you will be asked which CMake Kits(compiler) you want to use.
 
-In macOS, choose `Clang x.x.x` which point to `/usr/bin/clang++` (clang provided by xcode. of course you can choose other compilers if you have).
+In macOS, choose `Clang x.x.x` which point to `/usr/bin/clang++` (clang provided by xcode. Of course, you can choose other compilers if you have).
 
 In Windows, choose `Visual Studio Community 2019 Release - amd64`, you will have choices of architectures(like amd64/x86-amd64).
 
@@ -59,8 +58,9 @@ If successfully built, right click JUCE_CMAKE_EXAMPLE/src/ExamplePlugin_Standalo
 
 Open Debug Menu in left Sidebar. And click Run button on the left in a menu of CMake Debug(workspace). Standalone version of your plugin will be launched.
 
-(Note that you can also debug from "Debug" button in right-click menu of CMake Tools but you cannot use CodeLLDB debugger in this case.)
+(Note that you can also debug from "Debug" button in right-click menu of CMake Tools, but you cannot use CodeLLDB debugger in this case.)
 
+#### (Optional) Setting JUCE version
 
 The version of JUCE is currently 8.0.1 by default. JUCE is located as a git submodule in `lib` directory, so you can switch the version by checking out in the directory like this.
 
@@ -85,7 +85,7 @@ git commit -m "Changed the version of JUCE."
 
 ---
 
-All of source codes included in this repository are published under MIT License.
+All the source codes included in this repository are published under MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
